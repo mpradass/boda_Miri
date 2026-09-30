@@ -1,0 +1,15 @@
+/* Editorial veil cover */
+.veil-hero{height:100vh;height:100svh;min-height:560px;max-height:none;display:grid;place-items:center;isolation:isolate;background:#373a30;overflow:hidden}
+.veil-photo{position:absolute;inset:-3%;width:106%;height:106%;object-fit:cover;object-position:50% 58%;filter:saturate(.72) contrast(.91) brightness(.84);z-index:-2;animation:veil-drift 24s ease-in-out infinite alternate}
+.veil-hero:after{z-index:-1;background:linear-gradient(180deg,rgba(24,28,20,.07),rgba(24,28,20,.2) 48%,rgba(24,28,20,.12));pointer-events:none}
+.veil-content{width:100%;padding:30px 24px 55px;display:flex;align-items:center;flex-direction:column;text-align:center;color:#f6f0df}
+.hero h1.veil-monogram{margin:0;width:clamp(270px,38vw,480px);height:clamp(250px,34vw,425px);font-size:inherit;line-height:1;letter-spacing:normal;max-width:none;mix-blend-mode:screen;animation:veil-fade 2.2s ease both}
+.veil-monogram img{transform:scale(1.6);width:100%;height:100%;object-fit:contain;filter:grayscale(1) invert(1) contrast(4) brightness(2) sepia(.15);display:block}
+.veil-date{font:400 15px Georgia,serif;letter-spacing:.32em;margin:28px 0 0;animation:veil-fade 2s .4s ease both}
+.veil-venue{font:400 10px Arial,sans-serif;letter-spacing:.32em;line-height:2.3;margin:28px 0 0;animation:veil-fade 2s .75s ease both}
+.veil-venue span{font-size:9px;letter-spacing:.27em}
+@keyframes veil-fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+@keyframes veil-drift{from{transform:scale(1.015) translateY(-.4%)}to{transform:scale(1.045) translateY(.4%)}}
+@media(min-width:1000px){.veil-photo{object-position:50% 61%}.veil-content{padding-bottom:45px}.hero h1.veil-monogram{width:430px;height:365px}}
+@media(max-width:600px){.veil-hero{min-height:480px}.veil-photo{object-position:52% 50%}.hero h1.veil-monogram{width:min(83vw,370px);height:min(76vw,340px)}.veil-content{padding-bottom:35px}.veil-date{font-size:13px;letter-spacing:.26em;margin-top:28px}.veil-venue{font-size:9px;margin-top:25px}.veil-venue span{font-size:8px}}
+@media(prefers-reduced-motion:reduce){.veil-photo,.veil-monogram,.veil-date,.veil-venue{animation:none!important}}
