@@ -1,6 +1,6 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Miriam y Ricardo//Invitacion//ES
+PRODID:-//Ricardo y Miriam//Invitacion//ES
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:miriam-ricardo-20271023@invitacion.local
@@ -9,6 +9,6 @@ DTSTART;VALUE=DATE:20271023
 DTEND;VALUE=DATE:20271024
 SUMMARY:Boda de Miriam y Ricardo
 LOCATION:El Olivar\, Alcalá de Henares
-DESCRIPTION:Celebración tipo cóctel. Horario pendiente de confirmar.
+DESCRIPTION:Cóctel de bienvenida seguido de banquete en mesa. Horario por confirmar.
 END:VEVENT
 END:VCALENDAR
